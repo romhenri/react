@@ -1,12 +1,16 @@
 import React from 'react'
+import Button from './components/Button'
+import Footer from './components/Footer'
+
+// Componentes Snippet = "rafce"
 
 const SecStart = () => {
-	var btnStarted = false
 	return (
 		<section>
 			<h1>App React</h1> <hr />
 			<p>Iniciando e testando o ambiente.</p>
-			<button>{btnStarted ? 'Terminar' : 'Começar'}</button>
+			<Button text="Modo Escuro" bg="transparent" className="btn-b" />
+			<Button text="Iniciar" />
 		</section>
 	)
 }
@@ -61,6 +65,7 @@ const App = () => {
 		<main>
 			<SecStart />
 			<SecData />
+			<Footer />
 		</main>
 	)
 }
