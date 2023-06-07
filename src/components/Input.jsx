@@ -1,11 +1,16 @@
 import React from 'react'
 
-const Input = ({ label, id, ...props }) => {
+const Input = ({ type, label, id, placeholder, ...props }) => {
 	return (
 		<>
 			<label htmlFor={id}>
 				{label}
-				<input id={id} type="text" {...props} />
+				<input
+					id={id}
+					type={type ? type : 'text'}
+					placeholder={placeholder}
+					{...props}
+				/>
 			</label>
 		</>
 	)
