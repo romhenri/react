@@ -3,7 +3,7 @@
 }
 
 body {
-	padding: 20px 20px;
+	padding: 10px;
 	background-color: var(--bg);
 	color: var(--c1);
 	transition: 0.3s ease-out;
@@ -100,6 +100,7 @@ footer a:hover {
 
 input:focus {
 	outline: 1.5px solid #2f61e9;
+	border: 1px solid transparent;
 }
 
 label {

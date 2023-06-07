@@ -11,6 +11,7 @@ const SecForm = () => {
 			<Title>Formulário</Title>
 			<Flexbox>
 				<Input
+					type="email"
 					label="Email:"
 					id="inputEmail"
 					placeholder="seu.email@gmail.com"
@@ -26,7 +27,7 @@ const SecForm = () => {
 				/>
 			</Flexbox>
 			<ButtonsLine>
-				<Button text="Enviar" />
+				<Button text="Entrar" />
 			</ButtonsLine>
 		</section>
 	)
