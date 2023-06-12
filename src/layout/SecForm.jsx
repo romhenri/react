@@ -27,6 +27,7 @@ const SecForm = () => {
 				/>
 			</Flexbox>
 			<ButtonsLine>
+				<Button text="Registrar" bg="transparent" className="btn-b" />
 				<Button text="Entrar" />
 			</ButtonsLine>
 		</section>
