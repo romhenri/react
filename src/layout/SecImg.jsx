@@ -8,7 +8,7 @@ const SecImg = () => {
 	return (
 		<section>
 			<Title>Imagens</Title>
-			<Img src={pathImg} />
+			<Img src={pathImg} alt={'Geralt de Rívia em regiões gélidas.'} />
 		</section>
 	)
 }
