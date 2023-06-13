@@ -1,8 +1,9 @@
 import React from 'react'
 // Sections
 import SecStart from './layout/SecStart'
-import SecData from './layout/SecData'
 import SecForm from './layout/SecForm'
+import SecImg from './layout/SecImg'
+import SecData from './layout/SecData'
 // Components
 import Footer from './components/Footer'
 
@@ -13,6 +14,7 @@ const App = () => {
 		<main>
 			<SecStart />
 			<SecForm />
+			<SecImg />
 			<SecData />
 			<Footer />
 		</main>
