@@ -2,6 +2,17 @@
 	font-family: sans-serif;
 }
 
+body::-webkit-scrollbar {
+	width: 10px;
+}
+body::-webkit-scrollbar-track {
+	background: var(--bg2);
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #2f61e9b6;
+	border-radius: 20px;
+}
+
 body {
 	padding: 10px;
 	background-color: var(--bg);
