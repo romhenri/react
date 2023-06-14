@@ -9,8 +9,13 @@ const SecStart = () => {
 			<Title>App React</Title>
 			<p>Esta página tem como intuito testar conhecimentos em React.</p>
 			<ButtonsLine>
-				<Button text="Modo Escuro" bg="transparent" className="btn-b" />
-				<Button text="Iniciar" />{' '}
+				<Button
+					text="Modo Escuro"
+					bg="transparent"
+					className="btn-b"
+					func="setDarkMode"
+				/>
+				<Button text="Iniciar" func={'sla'} />
 			</ButtonsLine>
 		</section>
 	)

@@ -1,13 +1,21 @@
 import React from 'react'
 
-const Button = ({ text, bg, className }) => {
+const Button = ({ text, bg, className, func }) => {
 	const setDarkMode = () => {
 		document.body.classList.toggle('dark')
 	}
 
+	const handleClick = () => {
+		if (func === 'setDarkMode') {
+			setDarkMode()
+		} else {
+			console.log('Botão sem função!')
+		}
+	}
+
 	return (
 		<button
-			onClick={setDarkMode}
+			onClick={handleClick}
 			style={{ backgroundColor: bg }}
 			className={className}
 		>
