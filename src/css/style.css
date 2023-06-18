@@ -17,7 +17,7 @@ body {
 	padding: 10px;
 	background-color: var(--bg);
 	color: var(--c1);
-	transition: 0.3s ease-out;
+	/* transition: 0.3s ease-out; */
 }
 
 body {
@@ -86,7 +86,7 @@ button:hover {
 }
 
 button:active {
-	filter: brightness(70%);
+	filter: brightness(80%);
 	scale: 90%;
 	transition: 0.3s ease-out;
 }

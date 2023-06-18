@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './css/style.css'
 // Sections
 import SecStart from './layout/SecStart'
 import SecForm from './layout/SecForm'
