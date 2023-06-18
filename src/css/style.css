@@ -145,3 +145,53 @@ input {
 	justify-content: flex-end;
 	justify-content: flex-start;
 }
+
+.imgBox {
+	position: relative;
+}
+
+aside {
+	display: flex;
+	position: absolute;
+	width: 40px;
+	height: 150px;
+	background-color: rgba(5, 5, 5, 0.4);
+	top: calc(50% - 75px);
+	color: #fff;
+	font-weight: 400;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+aside:hover {
+	background-color: rgba(5, 5, 5, 0.5);
+}
+
+aside img {
+	opacity: 0.4;
+	width: 70%;
+	height: 70%;
+}
+
+aside:hover img {
+	opacity: 0.6;
+}
+
+aside.right {
+	right: 0;
+}
+
+aside.right img {
+	rotate: 180deg;
+}
+
+aside:active img {
+	transform: translateX(-10px);
+}
+
+.right:active img {
+	transform: translateX(-10px);
+}
