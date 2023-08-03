@@ -15,7 +15,7 @@ const SecStart = () => {
 					className="btn-b"
 					func="setDarkMode"
 				/>
-				<Button text="Iniciar" func={'sla'} />
+				<Button text="Iniciar" func={'null'} />
 			</ButtonsLine>
 		</section>
 	)

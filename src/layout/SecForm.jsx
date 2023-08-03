@@ -23,7 +23,7 @@ const SecForm = () => {
 					id="inputPassword"
 					placeholder="Mínimo de 8 caracteres"
 					required
-					minlength="8"
+					minLength="8"
 				/>
 			</Flexbox>
 			<ButtonsLine>

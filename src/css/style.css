@@ -87,8 +87,8 @@ button:hover {
 
 button:active {
 	filter: brightness(80%);
-	scale: 90%;
-	transition: 0.3s ease-out;
+	scale: 80%;
+	transition: 0.1s;
 }
 
 img {

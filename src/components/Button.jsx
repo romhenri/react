@@ -8,6 +8,10 @@ const Button = ({ text, bg, className, func }) => {
 	const handleClick = () => {
 		if (func === 'setDarkMode') {
 			setDarkMode()
+
+		} else if (func == 'null') {
+			return
+
 		} else {
 			console.log('Botão sem função!')
 		}
