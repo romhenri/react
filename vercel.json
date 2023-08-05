@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/login",
+      "destination": "https://romhenri-react.vercel.app/login"
+    },
+    {
+      "source": "/sigin",
+      "destination": "https://romhenri-react.vercel.app/singin"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://romhenri-react.vercel.app/"
+    }
+  ]
+}
