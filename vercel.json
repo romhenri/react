@@ -7,10 +7,6 @@
     {
       "source": "/sigin",
       "destination": "https://romhenri-react.vercel.app/singin"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "https://romhenri-react.vercel.app/"
     }
   ]
 }
