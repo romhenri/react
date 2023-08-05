@@ -1,7 +1,7 @@
 import React from 'react'
 
 const SingIn = () => {
-	return <div>SingIn</div>
+	return <div>LogIn</div>
 }
 
-export default SingIn
+export default LogIn

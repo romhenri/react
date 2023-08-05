@@ -4,11 +4,13 @@ import Flexbox from '../components/Flexbox'
 import Input from '../components/Input'
 import ButtonsLine from '../components/ButtonsLine'
 import Button from '../components/Button'
+import style from '../css/style.css'
+import {Link} from "react-router-dom";
 
-const SecForm = () => {
+const SecLogin = () => {
 	return (
 		<section>
-			<Title>Formulário</Title>
+			<Title>Entrar</Title>
 			<Flexbox>
 				<Input
 					type="email"
@@ -27,11 +29,16 @@ const SecForm = () => {
 				/>
 			</Flexbox>
 			<ButtonsLine>
-				<Button text="Registrar" bg="transparent" className="btn-b" />
-				<Button text="Entrar" />
+
+				<Link to={'/singin'}>
+					<Button text="Não Tenho Conta" bg="transparent" className="btn-b" func={'null'} />
+				</Link>
+
+				<Button text="Entrar" func={'null'}/>
+
 			</ButtonsLine>
 		</section>
 	)
 }
 
-export default SecForm
+export default SecLogin

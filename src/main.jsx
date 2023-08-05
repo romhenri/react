@@ -1,10 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, Link, Outlet} from 'react-router-dom'
 import App from './App'
 import ErrorPage from './pages/ErrorPage'
-import SingIn from './pages/SingIn'
+import SecSingin from './layout/SecSingin'
+import SecLogin from './layout/SecLogin'
 import About from './pages/About'
+import FormPage from './pages/FormPage'
 
 const router = createBrowserRouter([
 	{
@@ -13,18 +15,30 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 		children: [
 			{
-				path: '/singin',
-				element: <SingIn />,
+				path: '/',
+				element: <SecLogin />,
 			},
 			{
-				path: '/about',
-				element: <About />,
+				path: '/singin',
+				element: <SecSingin />,
 			},
-		],
+			{
+				path: '/login',
+				element: <SecLogin />,
+			},
+		]
 	},
+	{
+		path: 'about',
+		element: <About />,
+	},
+	{
+		path: 'form',
+		element: <FormPage />,
+	}
 ])
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
 		<RouterProvider router={router} />
 	</React.StrictMode>

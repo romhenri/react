@@ -140,6 +140,11 @@ input {
 	font-size: 1rem;
 }
 
+section .flexItem {
+	margin: 50px;
+}
+
+
 .buttonsLine {
 	display: flex;
 	justify-content: flex-end;
