@@ -6,7 +6,7 @@ import ButtonsLine from '../components/ButtonsLine'
 import Button from '../components/Button'
 import {Link} from "react-router-dom";
 
-const SecSingin = () => {
+const SecSingup = () => {
 	return (
 		<section>
 			<Title>Cadastre-se</Title>
@@ -70,4 +70,4 @@ const SecSingin = () => {
 	)
 }
 
-export default SecSingin
+export default SecSingup

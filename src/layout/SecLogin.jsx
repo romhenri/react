@@ -4,7 +4,6 @@ import Flexbox from '../components/Flexbox'
 import Input from '../components/Input'
 import ButtonsLine from '../components/ButtonsLine'
 import Button from '../components/Button'
-import style from '../css/style.css'
 import {Link} from "react-router-dom";
 
 const SecLogin = () => {
@@ -30,7 +29,7 @@ const SecLogin = () => {
 			</Flexbox>
 			<ButtonsLine>
 
-				<Link to={'/singin'}>
+				<Link to={'/singup'}>
 					<Button text="Não Tenho Conta" bg="transparent" className="btn-b" func={'null'} />
 				</Link>
 

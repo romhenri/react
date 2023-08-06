@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Title from '../components/Title'
 import Img from '../components/Img'
-import styles from '../css/style.css'
-
 import pathImg from '../assets/img/292030_20220314153108_1.png'
 import pathImg1 from '../assets/img/292030_20220305083107_1.png'
 import pathArrowLeft from '../assets/svg/arrow-left-solid.svg'
