@@ -17,6 +17,10 @@ const slides = [
   {
 		id: "slide4",
 		text: "Slide 4"
+	},
+  {
+		id: "slide5",
+		text: "Slide 5"
 	}
 ]
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../css/Slide.module.css'
 import Button from './Button'
+import Title from '../components/Title'
 
 const Slide = ({slides}) => {
   const [active, setActive] = React.useState(0)
@@ -28,6 +29,9 @@ const Slide = ({slides}) => {
 
   return (
     <section className={styles.container}>
+
+      <Title> Slider</Title>
+
       <div ref={contentRef} className={styles.content}
       style={{transform: `translateX(${position}px)`}}>
 
@@ -36,7 +40,8 @@ const Slide = ({slides}) => {
       </div>
       <nav className={styles.nav}>
 
-        <Button text='Anterior' onClick={slidePrev} className="btn-b"/>
+        <Button text='Anterior' onClick={slidePrev} bg="transparent"
+					className="btn-b"/>
         <Button text='Próximo' onClick={slideNext}/>
 
       </nav>

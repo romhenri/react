@@ -133,7 +133,6 @@ input {
 	padding: 10px 10px;
 	border-radius: 5px;
 	border: 1px solid var(--bg2);
-	width: 95%;
 	/* max-width: 380px; */
 	color: var(--c1);
 	background-color: var(--bg3);
@@ -143,7 +142,6 @@ input {
 section .flexItem {
 	margin: 50px;
 }
-
 
 .buttonsLine {
 	display: flex;
@@ -199,4 +197,20 @@ aside:active img {
 
 .right:active img {
 	transform: translateX(-10px);
+}
+
+@media (max-width: 600px) {
+ a {
+	display: flex;
+ }
+
+	button {
+		flex-basis: 0;
+		flex-grow: 1 !important;
+	}
+
+	nav {
+		width: 100% !important;
+		display: flex;
+	}
 }

@@ -4,9 +4,15 @@ import Flexbox from '../components/Flexbox'
 import Input from '../components/Input'
 import ButtonsLine from '../components/ButtonsLine'
 import Button from '../components/Button'
-import {Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SecSingup = () => {
+	let navigate = useNavigate();
+
+	function redirect() {
+		navigate('/login');
+	}
+
 	return (
 		<section>
 			<Title>Cadastre-se</Title>
@@ -60,11 +66,12 @@ const SecSingup = () => {
 
 			<ButtonsLine>
 
-				<Link to={'/login'}>
-					<Button text="Já Tenho Conta" bg="transparent" className="btn-b" onClick={null} />
-				</Link>
+					<Button text="Já Tenho Conta" bg="transparent" className="btn-b" onClick={redirect}/>
 				
-				<Button text="Entrar" onClick={null}/>
+{/* onClick={null} */}
+
+					<Button text="Entrar" onClick={null}/>
+
 			</ButtonsLine>
 		</section>
 	)

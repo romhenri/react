@@ -8,9 +8,9 @@
 }
 
 .item {
-  width: 80%;
+  width: 90%;
   flex-shrink: 0; /* Não compactar itens flex para caber */
-  margin: 0 10%;
+  margin: 0 5%;
   padding: 10rem 0;
   background: #eee;
   border-radius: 10px;
@@ -22,5 +22,5 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin: 1rem auto;
+  margin: 20px auto 0;
 }
