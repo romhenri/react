@@ -1,21 +1,20 @@
 import React from 'react'
 
-const Button = ({ text, bg, className, func }) => {
-	const setDarkMode = () => {
-		document.body.classList.toggle('dark')
-	}
+const Button = ({ text, bg, className, onClick }) => {
+
+	// const handleClick = onClick ? onClick : () => console.log("Sem Função!");
 
 	const handleClick = () => {
-		if (func === 'setDarkMode') {
-			setDarkMode()
+		if (onClick === null) {
 
-		} else if (func == 'null') {
-			return
+   	} else if (onClick) {
+			onClick();
 
 		} else {
-			console.log('Botão sem função!')
-		}
-	}
+			console.log(typeof(onClick));
+      console.log("Sem Função Específica!");
+    }
+  };
 
 	return (
 		<button

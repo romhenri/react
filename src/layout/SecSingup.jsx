@@ -61,10 +61,10 @@ const SecSingup = () => {
 			<ButtonsLine>
 
 				<Link to={'/login'}>
-					<Button text="Já Tenho Conta" bg="transparent" className="btn-b" func={'null'} />
+					<Button text="Já Tenho Conta" bg="transparent" className="btn-b" onClick={null} />
 				</Link>
 				
-				<Button text="Entrar" func={'null'}/>
+				<Button text="Entrar" onClick={null}/>
 			</ButtonsLine>
 		</section>
 	)

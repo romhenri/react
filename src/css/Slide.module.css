@@ -1,0 +1,26 @@
+.container {
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.item {
+  width: 80%;
+  flex-shrink: 0; /* Não compactar itens flex para caber */
+  margin: 0 10%;
+  padding: 10rem 0;
+  background: #eee;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+} 
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1rem auto;
+}

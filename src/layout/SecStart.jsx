@@ -4,6 +4,10 @@ import Button from '../components/Button'
 import ButtonsLine from '../components/ButtonsLine'
 
 const SecStart = () => {
+	function setDarkMode () {
+		document.body.classList.toggle('dark')
+	}
+
 	return (
 		<section>
 			<Title>App React</Title>
@@ -13,9 +17,9 @@ const SecStart = () => {
 					text="Modo Escuro"
 					bg="transparent"
 					className="btn-b"
-					func="setDarkMode"
+					onClick={setDarkMode}
 				/>
-				<Button text="Iniciar" func={'null'} />
+				<Button text="Iniciar" onClick={null}/>
 			</ButtonsLine>
 		</section>
 	)
