@@ -74,23 +74,35 @@ section {
 .container {
 	display: flex;
 	gap: 10px;
-	flex-wrap: wrap;
 	margin: auto;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .box {
 	display: flex;
 	border: 2px solid var(--bg2);
 	border-radius: 15px;
-	padding: 20px;
+	padding: 10px;
 	align-items: center;
-	gap: 15px
+	gap: 15px;
+	flex-grow: 1;
+	justify-content: center;
 }
 
 .box > div {
 	min-width: 50px;
 	text-align: center;
+}
+
+@media (max-width: 600px) {
+	.box {
+		width: 100%;
+	}
+
+	.box > div {
+		flex-grow: 3;
+	}
 }
 
 button {
