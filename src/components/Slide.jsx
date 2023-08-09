@@ -11,7 +11,7 @@ const Slide = ({slides}) => {
   React.useEffect(() => {
     const {width} = contentRef.current.getBoundingClientRect()
 
-    setPosition(-(width * active))
+    setPosition(-((width * active)))
 
   }, [active])
 

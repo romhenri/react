@@ -1,6 +1,6 @@
 .fadeDown {
   opacity: 0;
-  transform: scaleY(.3);
+  transform: scaleY(.8);
   transform-origin: top;
   animation: fadeDown .3s forwards;
 }
@@ -9,5 +9,26 @@
   to {
     opacity: 1;
     transform: initial;
+  }
+}
+
+.flex img {
+  width: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content:start;
+  gap: 15px;
+}
+
+@media (max-width: 600px) {
+  .flex img {
+    width: 40px;
+  }
+
+  .flex {
+    justify-content: space-between;
+    gap: 0px;
   }
 }
