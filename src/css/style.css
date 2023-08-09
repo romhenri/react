@@ -71,6 +71,28 @@ section {
 	margin-bottom: 20px;
 }
 
+.container {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
+}
+
+.box {
+	display: flex;
+	border: 2px solid var(--bg2);
+	border-radius: 15px;
+	padding: 20px;
+	align-items: center;
+	gap: 15px
+}
+
+.box > div {
+	min-width: 50px;
+	text-align: center;
+}
+
 button {
 	color: #fff;
 	padding: 10px 20px;
