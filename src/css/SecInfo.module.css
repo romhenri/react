@@ -1,0 +1,13 @@
+.fadeDown {
+  opacity: 0;
+  transform: scaleY(.3);
+  transform-origin: top;
+  animation: fadeDown .3s forwards;
+}
+
+@keyframes fadeDown {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
