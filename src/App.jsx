@@ -1,29 +1,27 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
-// Sections
-import SecStart from './layout/SecStart'
-import SecSlide from './layout/SecSlide'
-import SecButton from './layout/SecButton'
-import SecImg from './layout/SecImg'
-import SecData from './layout/SecData'
 // Components
-import Footer from './components/Footer'
 import styles from './css/style.css?inline'
-import SecCounter from './layout/SecCounter'
 
 // Componentes Snippet = "rafce"
+
+import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom'
+import ErrorPage from './pages/ErrorPage'
+import About from './pages/About'
+import HomePage from './pages/HomePage'
 
 const App = () => {
 	return (
 		<main>
-			<SecStart />
-			<Outlet />
-			<SecCounter />
-			<SecSlide />
-			<SecButton />
-			<SecImg />
-			<SecData />
-			<Footer />
+			<Router>
+				<Routes>
+					<Route path='/' element={<HomePage/>}/>
+					<Route path='about' element={<About/>}/>
+					<Route path='store' element={<About/>}/>
+					<Route path='error' element={<ErrorPage/>}/>
+					<Route path='*' element={<ErrorPage/>}/>
+				</Routes>
+			</Router>
 		</main>
 	)
 }

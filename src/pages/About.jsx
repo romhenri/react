@@ -2,12 +2,12 @@ import React from 'react'
 import Section from '../components/Section'
 import Title from '../components/Title'
 import Footer from '../components/Footer'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import ButtonsLine from '../components/ButtonsLine'
 import Button from '../components/Button'
 
 const About = () => {
-	return <main>
+	return <>
 		<Section>
 			<Title>
 					Sobre essa Aplicação Web
@@ -25,8 +25,10 @@ const About = () => {
 					</Link>
 				</ButtonsLine>
 		</Section>
+		<Outlet/>
 		<Footer/>
-	</main>
+		
+	</>
 }
 
 export default About
