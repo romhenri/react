@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Footer from '../components/Footer'
 import '../css/ContactPage.css';
 
 function App() {
@@ -17,14 +18,14 @@ function App() {
     const serviceID = "service_ne0oufn";
     const templateID = "template_vjo82vy";
     const templateParams = {
-      from_name: name,
+      from_name: name + ' - ' + email,
       message: message,
-      email: email
     }
     const publicKey = "xFBAbGm4Q9scA5Rzl";
 
     emailjs.send(serviceID, templateID, templateParams, publicKey)
     .then((response) => {
+      alert("Email enviado com sucesso!")
       console.log(`Email enviado com status ${response.status}!`);
       setName('')
       setEmail('')
@@ -35,9 +36,9 @@ function App() {
   }
 
   return (
-    <section className="contact-page container">
+  <main className='contact-page'>
+    <section className=" contact-section">
       <h1 className="title">Contato</h1>
-
       <form className="form" onSubmit={sendEmail}>
         <input 
           className="input"
@@ -66,6 +67,7 @@ function App() {
       </form>
 
     </section>
+    <Footer/></main>
   );
 }
 
