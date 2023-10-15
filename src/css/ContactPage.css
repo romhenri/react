@@ -1,6 +1,5 @@
 
 .contact-page .container{
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +7,7 @@
   background-color: #121212;
   color: #FFF;
   padding: 14px;
+  flex-wrap: nowrap !important;
 }
 
 .contact-page .title{
@@ -36,6 +36,14 @@
   padding: 8px;
   height: 94px;
   resize: none;
+  color: #FFF;
+  background-color: #2b2b2b;
+  border: 1px solid transparent;
+}
+
+.contact-page .textarea:focus{
+  outline: 1.5px solid #2f61e9;
+	border: 1px solid transparent;
 }
 
 .contact-page .button{
@@ -43,12 +51,13 @@
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  background-color: #0fdbff;
+  background-color: #2f61e9b6;
   font-size: 18px;
   transition: background-color, transform 0.8s;
+  padding: 5px;
 }
 
 .contact-page .button:hover{
-  background-color: #0fe3ff;
+  background-color:  #2f61e9b6;
   transform: scale(1.01);
 }

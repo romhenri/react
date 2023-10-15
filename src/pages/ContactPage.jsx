@@ -6,11 +6,39 @@ function App() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
+  function sendEmail(e) {
+    e.preventDefault()
+
+    if (name === '' || email === '' || message === '') {
+      alert("Preencha todos os campos!")
+      return
+    }
+
+    const serviceID = "service_ne0oufn";
+    const templateID = "template_vjo82vy";
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email
+    }
+    const publicKey = "xFBAbGm4Q9scA5Rzl";
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+    .then((response) => {
+      console.log(`Email enviado com status ${response.status}!`);
+      setName('')
+      setEmail('')
+      setMessage('')
+    }, (err) => {
+      console.log(err);
+    })
+  }
+
   return (
-    <div className="contact-page container">
+    <section className="contact-page container">
       <h1 className="title">Contato</h1>
 
-      <form className="form" onSubmit={() => {}}>
+      <form className="form" onSubmit={sendEmail}>
         <input 
           className="input"
           type="text"
@@ -37,7 +65,7 @@ function App() {
         <input className="button" type="submit" value="Enviar" />
       </form>
 
-    </div>
+    </section>
   );
 }
 
