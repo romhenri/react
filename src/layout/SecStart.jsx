@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Title from '../components/Title'
 import Button from '../components/Button'
 import ButtonsLine from '../components/ButtonsLine'
@@ -20,6 +21,12 @@ const SecStart = () => {
 		<section>
 			<Title>App React</Title>
 			<p>Esta página tem como intuito testar conhecimentos em React.</p>
+			
+			<p className='routes'>Rotas: 
+				<Link to="about"> About </Link>,
+				<Link to="contact"> Contact </Link> <span>e</span> 
+				<Link to="error"> Error </Link>.
+				</p>
 			<ButtonsLine>
 				<Button
 					text="Modo Escuro"

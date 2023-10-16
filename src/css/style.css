@@ -106,7 +106,8 @@ section {
 	}
 }
 
-button {
+button, 
+.contact-page input[type=submit] {
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -115,6 +116,7 @@ button {
 	outline: none;
 	margin: 5px;
 	margin-left: 0;
+	cursor: pointer;
 }
 
 button:hover {
@@ -235,6 +237,24 @@ aside:active img {
 
 .right:active img {
 	transform: translateX(-10px);
+}
+
+.routes a{
+	color: #d4d4d4;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
+.routes :nth-child(1) {margin-left: 10px;}
+.routes :nth-child(2) {margin: 10px;}
+.routes :nth-child(4) {margin-left: 10px;}
+
+.grow {
+	flex-basis: 0 !important;
+	flex-grow: 1 !important;
 }
 
 @media (max-width: 600px) {

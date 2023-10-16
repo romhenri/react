@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
+import Button from '../components/Button'
+import ButtonsLine from '../components/ButtonsLine'
 import Footer from '../components/Footer'
 import '../css/ContactPage.css';
 
@@ -64,6 +67,16 @@ function App() {
         />
 
         <input className="button" type="submit" value="Enviar" />
+
+        <ButtonsLine>
+        <Link to="/.">
+          <Button
+            text="Retornar a Home"
+            bg="transparent"
+            className="btn-b grow"
+          />
+        </Link>
+			</ButtonsLine>
       </form>
 
     </section>
