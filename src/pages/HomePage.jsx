@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 // Sections
 import SecStart from '../layout/SecStart'
+import Navbar from '../components/Navbar'
 import SecSlide from '../layout/SecSlide'
 import SecButton from '../layout/SecButton'
 import SecImg from '../layout/SecImg'
@@ -17,6 +18,7 @@ const HomePage = () => {
 	return (
 		<main>
 			<SecStart />
+			<Navbar />
 			<Outlet />
 			<SecCounter />
 			<SecSlide />
