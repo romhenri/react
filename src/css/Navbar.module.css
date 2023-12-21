@@ -1,0 +1,15 @@
+.nav_button {
+  background-color: transparent;
+  border: 2px solid #ffffff39;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 8px 40px;
+  transition: all 0.3s ease-out;
+}
+
+.nav_button:hover {
+  background-color: #ffffff11;
+  border: 2px solid #ffffff39;
+}
