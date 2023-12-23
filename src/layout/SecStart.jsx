@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import DataContext from '../context/DataContext'
 import Title from '../components/Title'
 import Button from '../components/Button'
 import ButtonsLine from '../components/ButtonsLine'
@@ -6,7 +7,7 @@ import SecInfo from '../layout/SecInfo'
 
 const SecStart = () => {
 	const [active, setActive] = useState(false)
-	const [darkMode, setDarkMode] = useState(true)
+	const {darkMode, setDarkMode} = useContext(DataContext);
 
 	useEffect(() => {
 		if (darkMode) {

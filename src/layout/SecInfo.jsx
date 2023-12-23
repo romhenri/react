@@ -8,7 +8,7 @@ const SecStart = () => {
 			<Title>Sobre esse App</Title>
 			<p>Desenvolvido usando:</p>
 			<div className={styles.flex}>
-				<img align="center" alt="JavaScript" height="54px" width="72px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"/>
+				<img align="center" alt="JavaScript" height="54px" width="72px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
 				
 				<img align="center" alt="HTML" height="54px" width="72px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"/>
 			

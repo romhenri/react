@@ -9,24 +9,27 @@ import Contact from './pages/ContactPage'
 import HomePage from './pages/HomePage'
 import SecSingup from './layout/SecSingup'
 import SecLogin from './layout/SecLogin'
+import { DataContextProvider } from './context/DataContext'
 
 const App = () => {
 	return (
-		<main>
-			<Router>
-				<Routes>
-					<Route path='/' element={<HomePage/>}>
-						<Route path='/' element={<SecSingup />}/>
-						<Route path='/singup' element={<SecSingup />}/>
-						<Route path='/login' element={<SecLogin />}/>
-					</Route>
-					<Route path='about' element={<About/>}/>
-					<Route path='contact' element={<Contact/>}/>
-					<Route path='error' element={<ErrorPage/>}/>
-					<Route path='*' element={<ErrorPage/>}/>
-				</Routes>
-			</Router>
-		</main>
+		<DataContextProvider>
+			<main>
+				<Router>
+					<Routes>
+						<Route path='/' element={<HomePage/>}>
+							<Route path='/' element={<SecSingup />}/>
+							<Route path='/singup' element={<SecSingup />}/>
+							<Route path='/login' element={<SecLogin />}/>
+						</Route>
+						<Route path='about' element={<About/>}/>
+						<Route path='contact' element={<Contact/>}/>
+						<Route path='error' element={<ErrorPage/>}/>
+						<Route path='*' element={<ErrorPage/>}/>
+					</Routes>
+				</Router>
+			</main>
+		</DataContextProvider>
 	)
 }
 
