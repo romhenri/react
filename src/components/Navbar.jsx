@@ -1,10 +1,13 @@
 import React from 'react'
 import NavButton from './NavButton'
+import style from '../css/Navbar.module.css'
 
 const Navbar = () => {
   return (
-    <section className="navbar">
-      <nav>
+    <section>
+      <nav className={style.navbar}>
+        <p>Navegue:</p>
+
         <NavButton text={"About"}
           to={"/about"}
         />

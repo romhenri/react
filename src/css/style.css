@@ -20,7 +20,7 @@ body {
 }
 
 body {
-	--bg: #fff;
+	--bg: #ececec;
 	--bg2: #d4d4d4;
 	--bg3: #f8f8f8;
 	--bg4: #f3f3f36d;
@@ -49,6 +49,7 @@ hr {
 	border-top: 1px solid;
 	opacity: 0.8;
 	margin-bottom: 20px;
+	color: var(--bgc2);
 }
 
 .flex {

@@ -1,19 +1,20 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import Title from '../components/Title'
 import Button from '../components/Button'
 import ButtonsLine from '../components/ButtonsLine'
 import SecInfo from '../layout/SecInfo'
 
 const SecStart = () => {
-	const [active, setActive] = React.useState(false)
+	const [active, setActive] = useState(false)
+	const [darkMode, setDarkMode] = useState(true)
 
-	function setDarkMode () {
-		document.body.classList.toggle('dark')
-	}
-
-	function activeSection () {
-		document.body.classList.toggle('dark')
-	}
+	useEffect(() => {
+		if (darkMode) {
+			document.body.classList.add('dark');
+		} else {
+			document.body.classList.remove('dark');
+		}
+	}, [darkMode])
 
 	return (
 		<>
@@ -23,10 +24,14 @@ const SecStart = () => {
 
 			<ButtonsLine>
 				<Button
-					text="Modo Escuro"
+					text={
+						darkMode ? "Modo Claro" : "Modo Escuro"
+					}
 					bg="transparent"
 					className="btn-b"
-					onClick={setDarkMode}
+					onClick={() => {
+						setDarkMode(!darkMode);
+					}}
 				/>
 				<Button text={active? "Saber Menos" : "Saber Mais"}
 				onClick={() => {setActive(!active)}}/>
