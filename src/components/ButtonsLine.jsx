@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const ButtonsLine = ({ children }) => {
-	return <div className="buttonsLine">{children}</div>
+	return <div className="buttonsLine">
+		{children}
+	</div>
 }
 
-export default ButtonsLine
+export default ButtonsLine;

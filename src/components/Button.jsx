@@ -1,30 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-const Button = ({ text, bg, className, onClick }) => {
-
-	// const handleClick = onClick ? onClick : () => console.log("Sem Função!");
-
-	const handleClick = () => {
-		if (onClick === null) {
-
-   	} else if (onClick) {
-			onClick();
-
-		} else {
-			console.log(typeof(onClick));
-      console.log("Sem Função Específica!");
-    }
-  };
+const Button = ({
+	text,
+	bg,
+	className,
+	...props // ...props is the rest of the props
+}) => {
 
 	return (
 		<button
-			onClick={handleClick}
 			style={{ backgroundColor: bg }}
 			className={className}
+			{...props}
 		>
 			{text}
 		</button>
 	)
 }
 
-export default Button
+export default Button;
