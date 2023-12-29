@@ -197,6 +197,10 @@ section .flexItem {
 	position: relative;
 }
 
+p, ol, ul  {
+	opacity: 0.8;
+}
+
 aside {
 	display: flex;
 	position: absolute;
