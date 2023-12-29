@@ -2,8 +2,8 @@ import React from 'react';
 
 const Button = ({
 	text,
-	bg,
-	className,
+	bg = '#2f61e9',
+	className = '',
 	...props // ...props is the rest of the props
 }) => {
 
