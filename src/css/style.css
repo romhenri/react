@@ -17,6 +17,7 @@ body {
 	padding: 10px;
 	background-color: var(--bg);
 	color: var(--c1);
+	overflow: scroll;
 }
 
 body {
@@ -282,6 +283,10 @@ p code {
 
 a {
 	color: inherit;
+}
+
+a.active div {
+	background-color: #2f61e937;
 }
 
 @media (max-width: 600px) {

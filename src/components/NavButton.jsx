@@ -1,6 +1,5 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import style from '../css/Navbar.module.css'
+import { NavLink } from 'react-router-dom';
+import style from '../css/Header.module.css';
 
 const NavButton = ({to, text}) => {
   return (
@@ -12,4 +11,4 @@ const NavButton = ({to, text}) => {
   )
 }
 
-export default NavButton
+export default NavButton;

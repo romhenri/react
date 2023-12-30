@@ -1,21 +1,19 @@
-import React from 'react'
-import styles from './css/style.css?inline'
 // Componentes Snippet = "rafce"
-import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, createRoutesFromElements, RouterProvider, BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom'
-import ErrorPage from './pages/ErrorPage'
-import About from './pages/About'
-import Contact from './pages/ContactPage'
-import HomePage from './pages/HomePage'
-import SecSingup from './layout/SecSingup'
-import SecLogin from './layout/SecLogin'
-import { DataContextProvider } from './context/DataContext'
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
+import Header from './components/Header';
+import ErrorPage from './pages/ErrorPage';
+import About from './pages/About';
+import Contact from './pages/ContactPage';
+import HomePage from './pages/HomePage';
+import SecSingup from './layout/SecSingup';
+import SecLogin from './layout/SecLogin';
+import { DataContextProvider } from './context/DataContext';
 
 const App = () => {
 	return (
 		<DataContextProvider>
-			<main>
 				<Router>
+				<Header />
 					<Routes>
 						<Route path='/' element={<HomePage/>}>
 							<Route path='/' element={<SecSingup />}/>
@@ -28,7 +26,6 @@ const App = () => {
 						<Route path='*' element={<ErrorPage/>}/>
 					</Routes>
 				</Router>
-			</main>
 		</DataContextProvider>
 	)
 }

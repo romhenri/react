@@ -19,6 +19,7 @@ const About = () => {
 	}, [darkMode])
 
 	return <>
+		<main>
 		<Section>
 			<Title>
 					Sobre essa Aplicação Web
@@ -40,6 +41,7 @@ const About = () => {
 					</Link>
 				</ButtonsLine>
 		</Section>
+		</main>
 		<Outlet/>
 		<Footer/>
 		

@@ -1,6 +1,6 @@
-import React from 'react'
-import NavButton from './NavButton'
-import style from '../css/Navbar.module.css'
+import React from 'react';
+import NavButton from './NavButton';
+import style from '../css/Header.module.css';
 
 const Navbar = () => {
   return (
@@ -24,4 +24,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
