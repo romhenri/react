@@ -1,10 +1,10 @@
-import Title from '../components/Title';
 import { CodeBlock, hybrid } from 'react-code-blocks';
+import Title from '../components/Title';
 
 const  SecVDOM = () => {
   const code = `<div>
-  <h1>Hi</h1>
-  <p>React is awesome</p>
+    <h1>Hi</h1>
+    <p>React is awesome</p>
 </div>`;
 
  const code2 = `{
@@ -22,7 +22,6 @@ const  SecVDOM = () => {
 }`;
 
 	return (
-		<>
 		<section>
 			<Title>
         O que é DOM Virtual? 
@@ -57,7 +56,6 @@ const  SecVDOM = () => {
         theme={hybrid}
       />
 		</section>
-		</>
 	)
 }
 

@@ -265,6 +265,13 @@ aside:active img {
 	flex-grow: 1 !important;
 }
 
+p code {
+	color: #7699f8;
+	background-color: var(--bg4);
+	padding: 2px 5px;
+	border-radius: 5px;
+}
+
 .error {
 	font-size: 0.8rem;
 	padding: 5px;

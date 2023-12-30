@@ -1,18 +1,17 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
 // Sections
-import SecStart from '../layout/SecStart'
-import Navbar from '../components/Navbar'
-import SecSlide from '../layout/SecSlide'
-import SecStates from '../layout/SecStates'
-import SecVDOM from '../layout/SecVDOM'
-import SecFetch from '../layout/SecFetch'
-import SecImg from '../layout/SecImg'
-import SecData from '../layout/SecData'
-import SecCounter from '../layout/SecCounter'
+import SecStart from '../layout/SecStart';
+import Navbar from '../components/Navbar';
+import SecSlide from '../layout/SecSlide';
+import SecStates from '../layout/SecStates';
+import SecVDOM from '../layout/SecVDOM';
+import SecJSX from '../layout/SecJSX';
+import SecFetch from '../layout/SecFetch';
+import SecImg from '../layout/SecImg';
+import SecData from '../layout/SecData';
+import SecCounter from '../layout/SecCounter';
 // Components
-import Footer from '../components/Footer'
-import styles from '../css/style.css?inline'
+import Footer from '../components/Footer';
 
 // Componentes Snippet = "rafce"
 
@@ -25,6 +24,7 @@ const HomePage = () => {
 			<SecStates />
 			<SecCounter />
 			<SecVDOM/>
+			<SecJSX />
 			<SecFetch />
 			<SecSlide />
 			<SecImg />
