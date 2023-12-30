@@ -1,7 +1,6 @@
 * {
 	font-family: sans-serif;
 }
-
 body::-webkit-scrollbar {
 	width: 10px;
 }
@@ -17,7 +16,7 @@ body {
 	padding: 10px;
 	background-color: var(--bg);
 	color: var(--c1);
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 body {
@@ -25,9 +24,13 @@ body {
 	--bg2: #d4d4d4;
 	--bg3: #f8f8f8;
 	--bg4: #f3f3f36d;
-	--c1: #000;
 	--bgc: #d4d4d4;
 	--bgc2: #d4d4d4;
+	
+	--c1: #000;
+	--c2: #2f61e9;
+	--c3: #2f61e91e;
+	--c4: #1d4ac4;
 }
 
 body.dark {
@@ -35,9 +38,13 @@ body.dark {
 	--bg2: #1a1a1a;
 	--bg3: #2b2b2b;
 	--bg4: #ffffff11;
-	--c1: #fff;
 	--bgc: #2b2b2b;
 	--bgc2: #1a1a1a;
+
+	--c1: #fff;
+	--c2: #2f61e9;
+	--c3: #2f61e937;
+	--c4: #7699f8;
 }
 
 main {
@@ -100,7 +107,6 @@ section {
 	text-align: center;
 }
 
-
 @media (max-width: 600px) {
 	.box {
 		width: 100%;
@@ -116,8 +122,8 @@ button,
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 5px;
-	background-color: #2f61e9;
-	border: 2px solid #2f61e9;
+	background-color: var(--c2);
+	border: 2px solid var(--c2);
 	outline: none;
 	margin: 5px;
 	margin-left: 0;
@@ -160,7 +166,7 @@ footer a:hover {
 }
 
 input:focus {
-	outline: 1.5px solid #2f61e9;
+	outline: 1.5px solid var(--c2);
 	border: 1px solid transparent;
 }
 
@@ -267,7 +273,7 @@ aside:active img {
 }
 
 p code {
-	color: #7699f8;
+	color: var(--c4);
 	background-color: var(--bg4);
 	padding: 2px 5px;
 	border-radius: 5px;
@@ -283,10 +289,11 @@ p code {
 
 a {
 	color: inherit;
+	text-decoration: none;
 }
 
 a.active div {
-	background-color: #2f61e937;
+	background-color: var(--c3);
 }
 
 @media (max-width: 600px) {

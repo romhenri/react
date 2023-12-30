@@ -1,5 +1,4 @@
-import React from 'react'
-import Slide from '../components/Slide'
+import Slide from '../components/Slide';
 
 const slides = [
 	{
@@ -22,12 +21,12 @@ const slides = [
 		id: "slide5",
 		text: "Slide 5"
 	}
-]
+];
 
 const SecSlide = () => {
   return (
     <Slide slides={slides}/>
   )
-}
+};
 
-export default SecSlide
+export default SecSlide;

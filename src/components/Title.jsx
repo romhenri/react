@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Title = ({ children }) => {
 	return (
 		<>
@@ -7,6 +5,6 @@ const Title = ({ children }) => {
 			<hr />
 		</>
 	)
-}
+};
 
-export default Title
+export default Title;

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Input = ({
 	type,
 	label,
@@ -20,6 +18,6 @@ const Input = ({
 			</label>
 		</>
 	)
-}
+};
 
-export default Input
+export default Input;

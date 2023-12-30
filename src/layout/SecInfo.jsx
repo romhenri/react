@@ -1,6 +1,5 @@
-import React from 'react'
-import Title from '../components/Title'
-import styles from '../css/SecInfo.module.css'
+import Title from '../components/Title';
+import styles from '../css/SecInfo.module.css';
 
 const SecStart = () => {
 	return (
@@ -20,6 +19,6 @@ const SecStart = () => {
 			</div>
 		</section>
 	)
-}
+};
 
-export default SecStart
+export default SecStart;

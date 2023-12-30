@@ -12,6 +12,7 @@ const Header = () => {
           src={logo_react} 
           className={style.logo}
           style={{width: 50, height: 50}}
+          loading="eager"
           alt="logo"
         />
 
@@ -26,8 +27,8 @@ const Header = () => {
           text={"Home"} 
         />
         <NavLink 
-          to={"/about"}
-          text={"Sobre"} 
+          to={"/demos"}
+          text={"Demos"} 
         />
         <NavLink 
           to={"/contact"}
@@ -36,6 +37,6 @@ const Header = () => {
       </nav>
     </header>
   )
-}
+};
 
 export default Header;

@@ -12,7 +12,7 @@ export const DataContextProvider = (
 ) => {
   const [darkMode, setDarkMode] = useState(
     () => JSON.parse(localStorage.getItem('darkMode'))
-  )
+  );
 
   useEffect(() => {
     localStorage.setItem('darkMode', JSON.stringify(darkMode));
@@ -27,7 +27,7 @@ export const DataContextProvider = (
       value={value}>
     {children}
     </DataContext.Provider>
-  )
-}
+  );
+};
 
 export default DataContext;

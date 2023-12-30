@@ -1,6 +1,7 @@
 // Componentes Snippet = "rafce"
-import { createBrowserRouter, createRoutesFromElements, RouterProvider, BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
+import DemosPage from './pages/DemosPage';
 import ErrorPage from './pages/ErrorPage';
 import About from './pages/About';
 import Contact from './pages/ContactPage';
@@ -15,10 +16,14 @@ const App = () => {
 				<Router>
 				<Header />
 					<Routes>
-						<Route path='/' element={<HomePage/>}>
-							<Route path='/' element={<SecSingup />}/>
-							<Route path='/singup' element={<SecSingup />}/>
-							<Route path='/login' element={<SecLogin />}/>
+						<Route path='/' element={<HomePage/>}/>
+						<Route element={<DemosPage/>}>
+							<Route path='demos' 
+								element={<SecSingup />}/>
+							<Route path='/singup' 
+								element={<SecSingup />}/>
+							<Route path='/login' 
+								element={<SecLogin />}/>
 						</Route>
 						<Route path='about' element={<About/>}/>
 						<Route path='contact' element={<Contact/>}/>
@@ -30,4 +35,4 @@ const App = () => {
 	)
 }
 
-export default App
+export default App;

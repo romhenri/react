@@ -1,4 +1,3 @@
-import React from 'react'
 import Title from '../components/Title'
 import ButtonsLine from '../components/ButtonsLine'
 import Button from '../components/Button'

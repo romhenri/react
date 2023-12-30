@@ -1,9 +1,8 @@
-import React from 'react'
-import Title from '../components/Title'
-import Flexbox from '../components/Flexbox'
-import Input from '../components/Input'
-import ButtonsLine from '../components/ButtonsLine'
-import Button from '../components/Button'
+import Title from '../components/Title';
+import Flexbox from '../components/Flexbox';
+import Input from '../components/Input';
+import ButtonsLine from '../components/ButtonsLine';
+import Button from '../components/Button';
 import { useNavigate } from "react-router-dom";
 
 const SecSingup = () => {
@@ -65,16 +64,17 @@ const SecSingup = () => {
 			</Flexbox>
 
 			<ButtonsLine>
+				<Button 
+					text="Já Tenho Conta" 
+					bg="transparent" 
+					className="btn-b" 
+					onClick={redirect}
+				/>
 
-					<Button text="Já Tenho Conta" bg="transparent" className="btn-b" onClick={redirect}/>
-				
-{/* onClick={null} */}
-
-					<Button text="Entrar" onClick={null}/>
-
+				<Button text="Entrar" onClick={null}/>
 			</ButtonsLine>
 		</section>
 	)
-}
+};
 
-export default SecSingup
+export default SecSingup;

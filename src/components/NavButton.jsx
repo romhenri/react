@@ -9,6 +9,6 @@ const NavButton = ({to, text}) => {
       </button>
     </NavLink>
   )
-}
+};
 
 export default NavButton;

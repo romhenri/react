@@ -1,4 +1,4 @@
-import DataContext from '../context/DataContext'
+import DataContext from '../context/DataContext';
 import { useContext } from 'react';
 import { CodeBlock, hybrid, monoBlue } from 'react-code-blocks';
 import Title from '../components/Title';
@@ -61,6 +61,6 @@ const  SecVDOM = () => {
       />
 		</section>
 	)
-}
+};
 
 export default SecVDOM;

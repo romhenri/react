@@ -101,6 +101,6 @@ const SecCounter = () => {
 			</div>
 		</section>
 	)
-}
+};
 
 export default SecCounter;

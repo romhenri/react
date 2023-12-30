@@ -1,7 +1,7 @@
-import React from 'react'
-import styles from '../css/Slide.module.css'
-import Button from './Button'
-import Title from '../components/Title'
+import React from 'react';
+import styles from '../css/Slide.module.css';
+import Button from './Button';
+import Title from '../components/Title';
 
 const Slide = ({slides}) => {
   const [active, setActive] = React.useState(0)
@@ -47,6 +47,6 @@ const Slide = ({slides}) => {
       </nav>
     </section>
   )
-}
+};
 
-export default Slide
+export default Slide;

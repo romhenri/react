@@ -13,6 +13,6 @@ const NavLink = (
       </div>
     </RouterNavLink>
   )
-}
+};
 
 export default NavLink;

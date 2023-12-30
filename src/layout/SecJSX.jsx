@@ -1,4 +1,4 @@
-import DataContext from '../context/DataContext'
+import DataContext from '../context/DataContext';
 import { useContext } from 'react';
 import { CodeBlock, hybrid, monoBlue } from 'react-code-blocks';
 import Title from '../components/Title';
@@ -25,7 +25,7 @@ const  SecJSX = () => {
 	return (
 		<section>
 			<Title>
-        O que JSX? 
+        O que é JSX? 
       </Title>
 
       <p>
@@ -90,6 +90,6 @@ const  SecJSX = () => {
 
 		</section>
 	)
-}
+};
 
 export default SecJSX;

@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import { useEffect, useContext } from 'react'
 import DataContext from '../context/DataContext'
 import Section from '../components/Section'
 import Title from '../components/Title'

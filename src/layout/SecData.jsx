@@ -1,18 +1,15 @@
-import React from 'react'
-import Title from '../components/Title'
+import Title from '../components/Title';
 
-const luana = {
-	cliente: 'Luana',
-	idade: 27,
+const ana = {
+	cliente: 'Ana',
+	idade: 51,
 	compras: [
 		{ nome: 'Notebook', preço: 'R$ 2500' },
-		{ nome: 'Geladeira', preço: 'R$ 3000' },
-		{ nome: 'Smartphone', preço: 'R$ 1500' },
-		{ nome: 'Guitarra', preço: 'R$ 3500' },
+		{ nome: 'Cama', preço: 'R$ 1000' },
+		{ nome: 'Bolsa', preço: 'R$ 300' },
 	],
-	ativa: false,
-}
-
+	ativa: true,
+};
 const mario = {
 	cliente: 'Mario',
 	idade: 31,
@@ -23,26 +20,52 @@ const mario = {
 		{ nome: 'Guitarra', preço: 'R$ 3500' },
 	],
 	ativa: true,
-}
+};
+const luana = {
+	cliente: 'Luana',
+	idade: 27,
+	compras: [
+		{ nome: 'Notebook', preço: 'R$ 2500' },
+		{ nome: 'Geladeira', preço: 'R$ 3000' },
+		{ nome: 'Smartphone', preço: 'R$ 1500' },
+		{ nome: 'Guitarra', preço: 'R$ 3500' },
+	],
+	ativa: false,
+};
 
 const SecData = () => {
-	const dados = mario
-	const total = dados.compras.map((item) =>
-		Number(item.preço.replace('R$ ', ''))
-	)
-
 	return (
-		<section>
-			<Title>Status de Clientes</Title>
-			<p>Nome: {dados.cliente}</p>
-			<p>Idade: {dados.idade}</p>
-			<p>
-				Ativa:
-				<span style={{ color: dados.ativa ? 'green' : 'red' }}>
-					{dados.ativa ? ' Ativa' : ' Inativa'}
-				</span>
-			</p>
-		</section>
-	)
-}
-export default SecData
+		<>
+			<section>
+				<Title>Status de Clientes</Title>
+				<p>Nome: {ana.cliente}</p>
+				<p>Idade: {ana.idade}</p>
+				<p>
+					Ativa:
+					<span style={{ color: ana.ativa ? 'green' : 'red' }}>
+						{ana.ativa ? ' Ativa' : ' Inativa'}
+					</span>
+				</p>
+				<hr />
+				<p>Nome: {mario.cliente}</p>
+				<p>Idade: {mario.idade}</p>
+				<p>
+					Ativa:
+					<span style={{ color: mario.ativa ? 'green' : 'red' }}>
+						{mario.ativa ? ' Ativa' : ' Inativa'}
+					</span>
+				</p>
+				<hr />
+				<p>Nome: {luana.cliente}</p>
+				<p>Idade: {luana.idade}</p>
+				<p>
+					Ativa:
+					<span style={{ color: luana.ativa ? 'green' : 'red' }}>
+						{luana.ativa ? ' Ativa' : ' Inativa'}
+					</span>
+				</p>
+			</section>
+		</>
+	);
+};
+export default SecData;

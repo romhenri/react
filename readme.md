@@ -13,4 +13,4 @@ Este repositório tem como intuito de praticar React como forma de estudo.
 #### Deploy
 
 -   React App
-    <a href="https://romhenri-react.vercel.app/" target="_blank">(Deploy)</a>
+  <a href="https://romhenri-react.vercel.app/" target="_blank">(Deploy)</a>

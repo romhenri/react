@@ -1,10 +1,9 @@
-import React from 'react'
-import Title from '../components/Title'
-import Flexbox from '../components/Flexbox'
-import Input from '../components/Input'
-import ButtonsLine from '../components/ButtonsLine'
-import Button from '../components/Button'
-import {Link, useNavigate} from "react-router-dom";
+import Title from '../components/Title';
+import Flexbox from '../components/Flexbox';
+import Input from '../components/Input';
+import ButtonsLine from '../components/ButtonsLine';
+import Button from '../components/Button';
+import {useNavigate} from "react-router-dom";
 
 const SecLogin = () => {
 	let navigate = useNavigate();
@@ -42,6 +41,6 @@ const SecLogin = () => {
 			</ButtonsLine>
 		</section>
 	)
-}
+};
 
-export default SecLogin
+export default SecLogin;

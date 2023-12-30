@@ -6,7 +6,7 @@ import ButtonsLine from '../components/ButtonsLine';
 import SecInfo from '../layout/SecInfo';
 
 const SecStart = () => {
-	const [active, setActive] = useState(false)
+	const [active, setActive] = useState(false);
 	const {darkMode, setDarkMode} = useContext(DataContext);
 
 	useEffect(() => {
@@ -15,7 +15,7 @@ const SecStart = () => {
 		} else {
 			document.body.classList.remove('dark');
 		}
-	}, [darkMode])
+	}, [darkMode]);
 
 	return (
 		<>
@@ -41,6 +41,6 @@ const SecStart = () => {
 		{active && <SecInfo />}
 		</>
 	)
-}
+};
 
 export default SecStart;

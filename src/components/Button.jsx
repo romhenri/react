@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Button = ({
 	text,
 	bg = '#2f61e9',
@@ -16,6 +14,6 @@ const Button = ({
 			{text}
 		</button>
 	)
-}
+};
 
 export default Button;

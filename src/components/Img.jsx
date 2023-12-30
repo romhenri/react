@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Img = ({ src, alt, borderRadius }) => {
 	return (
 		<div className="imgContainer">
@@ -11,6 +9,6 @@ const Img = ({ src, alt, borderRadius }) => {
 			></img>
 		</div>
 	)
-}
+};
 
-export default Img
+export default Img;

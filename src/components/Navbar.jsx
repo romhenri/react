@@ -1,4 +1,3 @@
-import React from 'react';
 import NavButton from './NavButton';
 import style from '../css/Header.module.css';
 
@@ -22,6 +21,6 @@ const Navbar = () => {
       </nav>
     </section>
   )
-}
+};
 
 export default Navbar;

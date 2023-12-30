@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Section = ({children}) => {
   return (
     <section>
@@ -8,4 +6,4 @@ const Section = ({children}) => {
   ) 
 }
 
-export default Section
+export default Section;

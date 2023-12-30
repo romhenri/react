@@ -3,10 +3,12 @@ import Title from '../components/Title';
 import Input from '../components/Input';
 import Button from '../components/Button';
 import ButtonsLine from '../components/ButtonsLine';
+import Loading from '../components/Loading';
 
 const SecFetch = () => {
 	const [CEP, setCEP] = useState('');
 	const [error, setError] = useState('');
+	const [loading, setLoading] = useState(false);
 
 	const [street, setStreet] = useState('');
 	const [city, setCity] = useState('');
@@ -33,6 +35,8 @@ const SecFetch = () => {
 			);
 			return;
 		}
+		setLoading(true);
+
 		const url = `https://viacep.com.br/ws/${CEP}/json/`;
 
 		fetch(url)
@@ -49,8 +53,10 @@ const SecFetch = () => {
 				setUf(data.uf);
 				setDdd(data.ddd);
 			})
-			.catch((error) => {
+			.catch(() => {
 				setError('CEP não encontrado!');
+			}).finally(() => {
+				setLoading(false);
 			});
 		// console.log('CEP: ', CEP);
 	}
@@ -72,16 +78,21 @@ const SecFetch = () => {
 				}
 
 				{city &&
-				 <p>
+					<p>
 					<strong>Cidade:</strong> {city} - {uf}
 					</p>
 				}
 
 				{ddd &&
-				 <p>
+					<p>
 					<strong>DDD:</strong> {ddd}
-				 </p>
+					</p>
 				}
+
+				{
+					loading && <Loading />
+				}
+
 			<hr />
 
 			<Input
@@ -113,6 +124,6 @@ const SecFetch = () => {
 		</section>
 		</>
 	)
-}
+};
 
 export default SecFetch;

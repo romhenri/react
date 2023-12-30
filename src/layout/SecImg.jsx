@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Title from '../components/Title'
 import Img from '../components/Img'
 import pathImg from '../assets/img/292030_20220314153108_1.png'
