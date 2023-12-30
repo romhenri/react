@@ -6,19 +6,24 @@ import style from '../css/Header.module.css';
 const Header = () => {
   return (
     <header className={style.header}>
-      <Link to={"/"}>
+      <Link className={style.logoname} 
+      to={"/"}>
         <img 
           src={logo_react} 
           className={style.logo}
           style={{width: 50, height: 50}}
           alt="logo"
         />
+
+        <h1 className={style.title}>
+          React App
+        </h1>
       </Link>
       
       <nav className={style.navbar}>
         <NavLink 
           to={"/"}
-          text={"Início"} 
+          text={"Home"} 
         />
         <NavLink 
           to={"/about"}

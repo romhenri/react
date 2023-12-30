@@ -1,7 +1,11 @@
-import { CodeBlock, hybrid } from 'react-code-blocks';
+import DataContext from '../context/DataContext'
+import { useContext } from 'react';
+import { CodeBlock, hybrid, monoBlue } from 'react-code-blocks';
 import Title from '../components/Title';
 
 const  SecJSX = () => {
+  const {darkMode} = useContext(DataContext);
+
   const code = `<div className="container">
     <p>React is awesome</p> {/* JSX */} 
 </div>`;
@@ -41,7 +45,7 @@ const  SecJSX = () => {
         language="jsx"
         showLineNumbers={true}
         codeBlock={true}
-        theme={hybrid}
+        theme={darkMode ? hybrid : monoBlue}
       />
       <br />
 
@@ -50,7 +54,7 @@ const  SecJSX = () => {
         language="javascript"
         showLineNumbers={true}
         codeBlock={true}
-        theme={hybrid}
+        theme={darkMode ? hybrid : monoBlue}
       />
       <br />
 
@@ -59,7 +63,7 @@ const  SecJSX = () => {
         language="html"
         showLineNumbers={true}
         codeBlock={true}
-        theme={hybrid}
+        theme={darkMode ? hybrid : monoBlue}
       />
 
       <p>
@@ -71,7 +75,7 @@ const  SecJSX = () => {
         language="javascript"
         showLineNumbers={true}
         codeBlock={true}
-        theme={hybrid}
+        theme={darkMode ? hybrid : monoBlue}
       />
 
       <ol>
