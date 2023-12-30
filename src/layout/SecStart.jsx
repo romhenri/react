@@ -1,9 +1,9 @@
-import { useState, useEffect, useContext } from 'react'
-import DataContext from '../context/DataContext'
-import Title from '../components/Title'
-import Button from '../components/Button'
-import ButtonsLine from '../components/ButtonsLine'
-import SecInfo from '../layout/SecInfo'
+import { useState, useEffect, useContext } from 'react';
+import DataContext from '../context/DataContext';
+import Title from '../components/Title';
+import Button from '../components/Button';
+import ButtonsLine from '../components/ButtonsLine';
+import SecInfo from '../layout/SecInfo';
 
 const SecStart = () => {
 	const [active, setActive] = useState(false)
@@ -43,4 +43,4 @@ const SecStart = () => {
 	)
 }
 
-export default SecStart
+export default SecStart;

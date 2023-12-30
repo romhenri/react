@@ -273,6 +273,10 @@ aside:active img {
 	margin: 10px 0px 5px 0px;
 }
 
+a {
+	color: inherit;
+}
+
 @media (max-width: 600px) {
  a {
 	display: flex;

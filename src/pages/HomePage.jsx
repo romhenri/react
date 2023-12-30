@@ -5,6 +5,7 @@ import SecStart from '../layout/SecStart'
 import Navbar from '../components/Navbar'
 import SecSlide from '../layout/SecSlide'
 import SecStates from '../layout/SecStates'
+import SecVDOM from '../layout/SecVDOM'
 import SecFetch from '../layout/SecFetch'
 import SecImg from '../layout/SecImg'
 import SecData from '../layout/SecData'
@@ -23,6 +24,7 @@ const HomePage = () => {
 			<Outlet />
 			<SecStates />
 			<SecCounter />
+			<SecVDOM/>
 			<SecFetch />
 			<SecSlide />
 			<SecImg />
