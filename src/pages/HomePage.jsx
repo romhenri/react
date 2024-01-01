@@ -1,5 +1,6 @@
 // Sections
 import SecStart from '../layout/SecStart';
+import SecComponents from '../layout/SecComponents';
 import SecVDOM from '../layout/SecVDOM';
 import SecJSX from '../layout/SecJSX';
 import SecHooks from "../layout/SecHooks";
@@ -15,6 +16,7 @@ const HomePage = () => {
 		<main>
 			<SecStart />
 			<SecJSX />
+			<SecComponents />	
 			<SecVDOM/>
 			<SecStates />
 			<SecHooks />

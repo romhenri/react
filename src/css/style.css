@@ -153,6 +153,7 @@ img {
 footer {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 20px;
 }
 
 footer a {
@@ -276,7 +277,11 @@ aside:active img {
 	flex-grow: 1 !important;
 }
 
-p code {
+.wrong > * {
+	border: 3px solid rgba(255, 0, 0, 0.2);
+}
+
+p code, li code {
 	color: var(--c4);
 	background-color: var(--bg4);
 	padding: 2px 5px;
