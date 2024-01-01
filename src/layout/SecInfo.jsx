@@ -4,8 +4,16 @@ import styles from '../css/SecInfo.module.css';
 const SecStart = () => {
 	return (
 		<section className={styles.fadeDown}>
-			<Title>Sobre esse App</Title>
-			<p>Desenvolvido usando:</p>
+			<Title>Desenvolvimento</Title>
+			<p>
+				Início: 06/06/2023.
+			</p>
+			<p>
+				Repositório: 	<a href="https://github.com/romhenri/react" target="_blank" rel="noreferrer">
+				https://github.com/romhenri/react
+				</a>
+			</p>
+			<p>Tecnologias:</p>
 			<div className={styles.flex}>
 				<img align="center" alt="JavaScript" height="54px" width="72px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
 				

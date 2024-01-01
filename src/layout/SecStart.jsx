@@ -20,8 +20,14 @@ const SecStart = () => {
 	return (
 		<>
 		<section>
-			<Title>App React</Title>
-			<p>Esta página tem como intuito testar conhecimentos em React.</p>
+			<Title>Sobre esse App</Title>
+			<p>
+				O intuito desta aplicação é aprender, testar e praticar React.js. Aqui você encontra anotações/resumos sobre conceitos dessa biblioteca tão poderosa.
+				Em &quot;Demos&quot;, você encontra exemplos de componentes interessantes e úteis de serem feitos em React. 
+			</p>
+			<p>
+				Se quiser saber sobre o desenvolvimento dessa aplicação, clique em  &quot;Saber Mais&quot;
+			</p>
 
 			<ButtonsLine>
 				<Button
@@ -34,7 +40,7 @@ const SecStart = () => {
 						setDarkMode(!darkMode);
 					}}
 				/>
-				<Button text={active? "Saber Menos" : "Saber Mais"}
+				<Button text={active? "Fechar" : "Saber Mais"}
 				onClick={() => {setActive(!active)}}/>
 			</ButtonsLine>
 		</section>
