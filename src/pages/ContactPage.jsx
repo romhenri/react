@@ -28,7 +28,7 @@ function App() {
       message: message,
     }
     const publicKey = "xFBAbGm4Q9scA5Rzl";
-
+    // eslint-disable-next-line
     emailjs.send(serviceID, templateID, templateParams, publicKey)
     .then((response) => {
       alert("Email enviado com sucesso!")

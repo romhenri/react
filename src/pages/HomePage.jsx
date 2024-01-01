@@ -1,8 +1,9 @@
 // Sections
 import SecStart from '../layout/SecStart';
-import SecStates from '../layout/SecStates';
 import SecVDOM from '../layout/SecVDOM';
 import SecJSX from '../layout/SecJSX';
+import SecHooks from "../layout/SecHooks";
+import SecStates from '../layout/SecStates';
 import SecCounter from '../layout/SecCounter';
 // Components
 import Footer from '../components/Footer';
@@ -13,10 +14,11 @@ const HomePage = () => {
 	return (
 		<main>
 			<SecStart />
-			<SecStates />
-			<SecCounter />
-			<SecVDOM/>
 			<SecJSX />
+			<SecVDOM/>
+			<SecStates />
+			<SecHooks />
+			<SecCounter />
 
 			<Footer />
 		</main>
