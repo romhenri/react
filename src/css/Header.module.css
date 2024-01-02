@@ -16,7 +16,7 @@
   flex-wrap: wrap;
 
   max-width: 928px;
-	margin: 0px auto 10px auto;
+	margin: 10px auto 10px auto;
 }
 
 .header img:hover {
@@ -101,7 +101,13 @@
 
 @media (max-width: 600px) {
   .header {
-    padding-bottom: 8px;
+    padding: 22px 14px 8px 14px;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid var(--bg2);
   }
   .navbar {
     gap: 5px;

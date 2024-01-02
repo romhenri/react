@@ -8,7 +8,7 @@
   flex-wrap: nowrap !important;
   max-width: 630px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .contact-page .title{
   margin-bottom: 14px;
@@ -48,7 +48,4 @@ hr {
 	opacity: 0.8;
 	margin-bottom: 20px;
   color: var(--bgc2);
-}
-.contact-page footer {
-  margin-top: 20px;
 }

@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
-import Footer from '../components/Footer';
-import '../css/ContactPage.css';
 import Loading from '../components/Loading';
+import '../css/ContactPage.css';
 
 function App() {
   const [name, setName] = useState('');
@@ -45,7 +44,6 @@ function App() {
   }
 
   return (
-  <>
     <main className='contact-page'>
       <section className=" contact-section">
         <h1 className="title">Contato</h1>
@@ -91,11 +89,8 @@ function App() {
             />
           </Link>
         </form>
-
       </section>
     </main>
-    <Footer/>
-  </>
   );
 }
 

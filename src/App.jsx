@@ -8,13 +8,14 @@ import Contact from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import SecSingup from './layout/SecSingup';
 import SecLogin from './layout/SecLogin';
+import Footer from './components/Footer';
 import { DataContextProvider } from './context/DataContext';
 
 const App = () => {
 	return (
 		<DataContextProvider>
 				<Router>
-				<Header />
+					<Header />
 					<Routes>
 						<Route path='/' element={<HomePage/>}/>
 						<Route element={<DemosPage/>}>
@@ -30,6 +31,7 @@ const App = () => {
 						<Route path='error' element={<ErrorPage/>}/>
 						<Route path='*' element={<ErrorPage/>}/>
 					</Routes>
+					<Footer />
 				</Router>
 		</DataContextProvider>
 	)
