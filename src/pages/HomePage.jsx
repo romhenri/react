@@ -1,10 +1,11 @@
 // Sections
 import SecStart from '../layout/SecStart';
+import SecJSX from '../layout/SecJSX';
 import SecComponents from '../layout/SecComponents';
 import SecVDOM from '../layout/SecVDOM';
-import SecJSX from '../layout/SecJSX';
-import SecHooks from "../layout/SecHooks";
+import SecCompArch from '../layout/SecCompArch';
 import SecStates from '../layout/SecStates';
+import SecHooks from "../layout/SecHooks";
 import SecCounter from '../layout/SecCounter';
 // Components
 import Footer from '../components/Footer';
@@ -18,6 +19,7 @@ const HomePage = () => {
 			<SecJSX />
 			<SecComponents />	
 			<SecVDOM/>
+			<SecCompArch />
 			<SecStates />
 			<SecHooks />
 			<SecCounter />
