@@ -1,6 +1,7 @@
 import DataContext from '../context/DataContext';
 import { useContext } from 'react';
 import { CodeBlock, hybrid, monoBlue } from 'react-code-blocks';
+import Section from '../components/Section';
 import Title from '../components/Title';
 
 const  SecHooks = () => {
@@ -15,7 +16,7 @@ const  SecHooks = () => {
 }, [dependencies]);`;
 
 	return (
-		<section>
+		<Section>
 			<Title>
         Hooks
       </Title>
@@ -90,7 +91,19 @@ const  SecHooks = () => {
         codeBlock={true}
         theme={darkMode ? hybrid : monoBlue}
       />
-		</section>
+      <hr />
+      <h3>useMemo</h3>
+      <p>
+        O useMemo é um hook que permite memorizar, ou seja, agrupar valores para que ao serem alterados, não sejam recriados. Uma forma de otimizar o desempenho da aplicação.
+      </p>
+      <CodeBlock
+        text={`const value = useMemo(() => {/* Code*/}, [dependencies]);`}
+        language="javascript"
+        showLineNumbers={true}
+        codeBlock={true}
+        theme={darkMode ? hybrid : monoBlue}
+      />
+		</Section>
 	)
 };
 

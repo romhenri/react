@@ -9,6 +9,7 @@ import SecHooks from "../layout/SecHooks";
 import SecCounter from '../layout/SecCounter';
 // Components
 import Footer from '../components/Footer';
+import SecContext from '../layout/SecContext';
 
 // Componentes Snippet = "rafce"
 
@@ -22,8 +23,8 @@ const HomePage = () => {
 			<SecCompArch />
 			<SecStates />
 			<SecHooks />
+			<SecContext />
 			<SecCounter />
-
 			<Footer />
 		</main>
 	)
