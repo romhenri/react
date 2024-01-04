@@ -11,7 +11,10 @@ const Accordion = (
   const [isCollapsed, setIsCollapsed] = useState(true);
   const AccordionBody = useRef(null);
 
-  const { card, header, active } = style;
+  const {
+    card, header, body,
+    activeHeader, activeBody 
+  } = style;
 
   const toggleCollapsed = () =>  {
     setIsCollapsed(!isCollapsed);
@@ -19,10 +22,11 @@ const Accordion = (
 
   return (
     <div 
-      className={card}
+      className={`${card}`}
       onClick={toggleCollapsed}
     >
-      <div className={header} >
+      <div 
+      className={`${header} ${isCollapsed ? '' : activeHeader}`}>
         {title}
         <div>
           <img 
@@ -39,7 +43,7 @@ const Accordion = (
         </div>
       </div>
       <div 
-        className={isCollapsed ? '' : active} 
+        className={`${body} ${isCollapsed ? '' : activeBody}`}
         ref={AccordionBody}>
         {isCollapsed ? '' : children}
       </div>

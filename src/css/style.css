@@ -24,6 +24,7 @@ body {
 	--bg2: #d4d4d4;
 	--bg3: #f8f8f8;
 	--bg4: #f3f3f36d;
+	--bg5: #f8f8f8;
 	--bgc: #d4d4d4;
 	--bgc2: #d4d4d4;
 	
@@ -38,6 +39,7 @@ body.dark {
 	--bg2: #1a1a1a;
 	--bg3: #2b2b2b;
 	--bg4: #ffffff11;
+	--bg5: #1f1f1f;
 	--bgc: #2b2b2b;
 	--bgc2: #1a1a1a;
 

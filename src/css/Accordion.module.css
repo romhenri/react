@@ -24,20 +24,36 @@
 }
 
 .header:hover {
-  background-color: var(--bg3);
+  background-color: var(--bgc);
   transition: .3s;
 }
 
-.body{
+.body {
   /* Collapsed */
   max-height: 0;
   overflow: hidden;
 }
 
-.active{
+.activeHeader {
+  background-color: var(--bg5);
+  transition: border-radius 1s;
+}
+
+.activeBody {
   /* Expanded */
   max-height: 1000px;
   transition: padding 0.35s ease-in;
   transition: max-height 0.35s ease-in;
   padding: 20px 20px 20px 20px;
+  opacity: .8;
+  animation: open 0.6s ease-in;
+}
+
+@keyframes open {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 1000px;
+  }
 }
