@@ -6,7 +6,6 @@ import SecVDOM from '../layout/SecVDOM';
 import SecCompArch from '../layout/SecCompArch';
 import SecStates from '../layout/SecStates';
 import SecHooks from "../layout/SecHooks";
-import SecCounter from '../layout/SecCounter';
 import SecContext from '../layout/SecContext';
 
 // Componentes Snippet = "rafce"
@@ -22,7 +21,6 @@ const HomePage = () => {
 			<SecStates />
 			<SecHooks />
 			<SecContext />
-			<SecCounter />
 		</main>
 	)
 }

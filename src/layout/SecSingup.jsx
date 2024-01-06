@@ -1,3 +1,4 @@
+import Section from '../components/Section';
 import Title from '../components/Title';
 import Flexbox from '../components/Flexbox';
 import Input from '../components/Input';
@@ -6,14 +7,14 @@ import Button from '../components/Button';
 import { useNavigate } from "react-router-dom";
 
 const SecSingup = () => {
-	let navigate = useNavigate();
+	const navigate = useNavigate();
 
 	function redirect() {
 		navigate('/login');
 	}
 
 	return (
-		<section>
+		<Section>
 			<Title>Cadastre-se</Title>
 
 			<Flexbox className="flexItem">
@@ -66,14 +67,12 @@ const SecSingup = () => {
 			<ButtonsLine>
 				<Button 
 					text="Já Tenho Conta" 
-					bg="transparent" 
-					className="btn-b" 
+					secondary 
 					onClick={redirect}
 				/>
-
 				<Button text="Entrar" onClick={null}/>
 			</ButtonsLine>
-		</section>
+		</Section>
 	)
 };
 

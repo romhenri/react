@@ -34,8 +34,8 @@ const Accordion = (
               width: "20px",
               height: "20px",
               transform: isCollapsed
-              ? "rotate(0deg)" 
-              : "rotate(90deg)"
+              ? "rotate(90deg)" 
+              : "rotate(-90deg)"
             }}
             src={icon_arrow} 
             alt="null"

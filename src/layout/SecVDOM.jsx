@@ -1,6 +1,7 @@
 import DataContext from '../context/DataContext';
 import { useContext } from 'react';
 import { CodeBlock, hybrid, monoBlue } from 'react-code-blocks';
+import Section from '../components/Section';
 import Title from '../components/Title';
 
 const  SecVDOM = () => {
@@ -26,7 +27,7 @@ const  SecVDOM = () => {
 }`;
 
 	return (
-		<section>
+		<Section>
 			<Title>
         O que é DOM Virtual? 
       </Title>
@@ -59,7 +60,7 @@ const  SecVDOM = () => {
         codeBlock={true}
         theme={darkMode ? hybrid : monoBlue}
       />
-		</section>
+		</Section>
 	)
 };
 

@@ -3,7 +3,7 @@ import style from '../css/Header.module.css';
 
 const Navbar = () => {
   return (
-    <section>
+    <Section>
       <nav className={style.navbar}>
         <p>Navegue:</p>
 
@@ -19,7 +19,7 @@ const Navbar = () => {
           to={"/error"}
         />
       </nav>
-    </section>
+    </Section>
   )
 };
 

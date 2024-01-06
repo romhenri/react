@@ -4,7 +4,7 @@ import Accordion from '../components/Accordion';
 
 const  SecAccordion = () => {
 	return (
-		<Section>
+		<Section paddingMinimum>
 			<Title>
         Accordions
       </Title>

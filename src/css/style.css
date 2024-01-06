@@ -1,5 +1,7 @@
 * {
-	font-family: sans-serif;
+	font-family: 'Trebuchet MS','Lucida Sans Unicode',sans-serif,sans-serif;
+	letter-spacing: .6px;
+	line-height: 1.4;
 }
 body::-webkit-scrollbar {
 	width: 10px;
@@ -52,7 +54,7 @@ body.dark {
 main {
 	max-width: 960px;
 	margin: auto;
-	padding: 10px;
+	padding: 5px 10px 10px 10px;
 }
 
 hr {
@@ -61,6 +63,7 @@ hr {
 	opacity: 0.8;
 	margin-bottom: 20px;
 	color: var(--bgc2);
+	width: 100%;
 }
 
 .flex {
@@ -75,15 +78,19 @@ hr {
 	display: none;
 }
 
-.btn-b {
-	color: var(--c1);
-}
-
 section {
 	border: 2px solid var(--bg2);
 	border-radius: 15px;
 	padding: 20px;
 	margin-bottom: 15px;
+}
+
+section.min-padding {
+	padding: 10px;
+}
+
+section.min-padding > h2 {
+	padding: 0px 10px;
 }
 
 main section:last-child {
@@ -114,6 +121,11 @@ main section:last-child {
 	text-align: center;
 }
 
+h2 {
+	text-align: left;
+	width: 100%;
+}
+
 h3 {
 	font-size: 1.1rem;
 }
@@ -133,12 +145,23 @@ button,
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 5px;
-	background-color: var(--c2);
 	border: 2px solid var(--c2);
 	outline: none;
 	margin: 5px;
 	margin-left: 0;
 	cursor: pointer;
+	background-color: var(--c2);
+	font-size: .9rem;
+}
+
+button.btn-a {
+	background-color: var(--c2);
+
+}
+
+button.btn-b {
+	background-color: transparent;
+	color: var(--c1);
 }
 
 button:hover {
@@ -201,6 +224,30 @@ input {
 	font-size: 1rem;
 }
 
+textarea {
+	border-radius: 5px;
+	border: 1px solid var(--bg2);
+	color: var(--c1);
+	background-color: var(--bg3);
+	font-size: 1rem;
+	padding: 15px;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+textarea:-webkit-input-placeholder { /* WebKit browsers */
+	padding: 5px 0 0 5px;
+}
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	padding: 5px 0 0 5px;
+}
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+	padding: 5px 0 0 5px;
+}
+textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+	padding: 5px 0 0 5px;
+}
+
 section .flexItem {
 	margin: 50px;
 }
@@ -218,6 +265,8 @@ section .flexItem {
 
 p, ol, ul  {
 	opacity: 0.8;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 aside {
@@ -278,6 +327,10 @@ aside:active img {
 .routes :nth-child(1) {margin-left: 10px;}
 .routes :nth-child(2) {margin: 10px;}
 .routes :nth-child(4) {margin-left: 10px;}
+
+li {
+	padding-right: 5px;
+}
 
 .grow {
 	flex-basis: 0 !important;

@@ -1,9 +1,10 @@
+import Section from '../components/Section';
 import Title from '../components/Title';
 import styles from '../css/SecInfo.module.css';
 
 const SecStart = () => {
 	return (
-		<section className={styles.fadeDown}>
+		<Section className={styles.fadeDown}>
 			<Title>Desenvolvimento</Title>
 			<p>
 				Início: 06/06/2023.
@@ -25,7 +26,7 @@ const SecStart = () => {
 				
 				<img align="center" alt="Vite.js" height="54" width="72" src="https://raw.githubusercontent.com/romhenri/romhenri/main/icons/vitejs.svg"/>
 			</div>
-		</section>
+		</Section>
 	)
 };
 

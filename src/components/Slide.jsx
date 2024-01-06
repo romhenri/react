@@ -1,34 +1,29 @@
-import React from 'react';
-import styles from '../css/Slide.module.css';
+import {useState, useEffect, useRef} from 'react';
+import Section from '../components/Section';
 import Button from './Button';
 import Title from '../components/Title';
+import styles from '../css/Slide.module.css';
 
 const Slide = ({slides}) => {
-  const [active, setActive] = React.useState(0)
-  const [position, setPosition] = React.useState(0)
-  const contentRef = React.useRef()
+  const [active, setActive] = useState(0);
+  const [position, setPosition] = useState(0);
+  const contentRef = useRef();
 
-  React.useEffect(() => {
-    const {width} = contentRef.current.getBoundingClientRect()
-
-    setPosition(-((width * active)))
-
+  useEffect(() => {
+    const {width} = contentRef.current.getBoundingClientRect();
+    setPosition(-((width * active)));
   }, [active])
 
   function slidePrev() {
-
-    if (active > 0) setActive(active - 1)
-
+    if (active > 0) setActive(active - 1);
   }
 
   function slideNext() {
-
-    if (active < slides.length - 1) setActive(active + 1)
-
+    if (active < slides.length - 1) setActive(active + 1);
   }
 
   return (
-    <section className={styles.container}>
+    <Section className={styles.container}>
 
       <Title> Slider</Title>
 
@@ -39,13 +34,17 @@ const Slide = ({slides}) => {
 
       </div>
       <nav className={styles.nav}>
-
-        <Button text='Anterior' onClick={slidePrev} bg="transparent"
-					className="btn-b"/>
-        <Button text='Próximo' onClick={slideNext}/>
-
+        <Button 
+          text='Anterior' 
+          onClick={slidePrev} 
+          secondary
+        />
+        <Button 
+          text='Próximo' 
+          onClick={slideNext}
+        />
       </nav>
-    </section>
+    </Section>
   )
 };
 

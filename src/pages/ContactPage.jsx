@@ -1,5 +1,10 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import Section from '../components/Section';
+import Title from '../components/Title';
+import Flexbox from '../components/Flexbox';
+import Input from '../components/Input';
+import Textarea from '../components/Textarea';
 import Button from '../components/Button';
 import Loading from '../components/Loading';
 import '../css/ContactPage.css';
@@ -10,6 +15,8 @@ function App() {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
 
   function sendEmail(e) {
     e.preventDefault();
@@ -38,38 +45,46 @@ function App() {
     }, (err) => {
       console.log(err);
     });
-
     setLoading(false);
     setError('');
   }
 
   return (
-    <main className='contact-page'>
-      <section className=" contact-section">
-        <h1 className="title">Contato</h1>
+    <main className="contact-page">
+      <Section className="contact-section">
+        <Title>Contato</Title>
+        <p>
+          Dúvidas, sugestões ou reclamações? Entre em contato através do formulário abaixo.
+        </p>
         <form className="form" onSubmit={sendEmail}>
-          <input 
-            className="input"
-            type="text"
-            placeholder="Digite seu nome"
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-          />
-          
-          <input 
-            className="input"
-            type="text"
-            placeholder="Digite seu email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-          />
-
-          <textarea 
-            className="textarea"
-            placeholder="Digite sua mensagem..."
-            onChange={(e) => setMessage(e.target.value)}
-            value={message}
-          />
+          <Flexbox>
+            <Input 
+              label="Nome:"
+              type="text"
+              placeholder="Digite seu nome"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+            />
+          </Flexbox>
+          <Flexbox>
+            <Input 
+              label="Email:"
+              type="text"
+              placeholder="Digite seu email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
+          </Flexbox>
+          <Flexbox>
+            <Textarea 
+              label="Mensagem:"
+              name="message"
+              className="textarea"
+              placeholder="Digite sua mensagem..."
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+            />  
+          </Flexbox>
 
           {
             loading && <Loading />
@@ -79,17 +94,22 @@ function App() {
             <p className="error">{error}</p>
           }
 
-          <input className="button" type="submit" value="Enviar" />
-
-          <Link to="/.">
-            <Button
-              text="Retornar a Home"
-              bg="transparent"
-              className="btn-b grow"
-            />
-          </Link>
+          <input 
+            type="submit"
+            value="Enviar" 
+          />
+          <Button
+            text="Retornar a Home"
+            secondary
+            className="grow"
+            onClick={
+              (e) => {
+                e.preventDefault();
+                navigate('/')
+              }}
+          />
         </form>
-      </section>
+      </Section>
     </main>
   );
 }

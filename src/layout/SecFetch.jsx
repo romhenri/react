@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Section from '../components/Section';
 import Title from '../components/Title';
 import Input from '../components/Input';
 import Button from '../components/Button';
@@ -63,7 +64,7 @@ const SecFetch = () => {
 
 	return (
 		<>
-		<section>
+		<Section>
 			<Title>Fetch Data</Title>
 			<p>
 				Fecth em uma API de Buscar CEP:
@@ -121,7 +122,7 @@ const SecFetch = () => {
 					onClick={fecthDataCEP}
 				/>
 			</ButtonsLine>
-		</section>
+		</Section>
 		</>
 	)
 };

@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Section from '../components/Section';
 import Title from '../components/Title';
 import Button from '../components/Button';
 import ButtonsLine from '../components/ButtonsLine';
@@ -9,7 +10,7 @@ const SecStates = () => {
   const [isYes, setYes] = useState(false);
 
   return (  
-    <section>
+    <Section>
       <Title>Estados</Title>
 
       <p>
@@ -72,7 +73,7 @@ const SecStates = () => {
           onClick={()=>{setYes(!isYes)}} 
         />
       </ButtonsLine>
-    </section>
+    </Section>
   );
 };
 

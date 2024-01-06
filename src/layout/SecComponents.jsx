@@ -1,6 +1,7 @@
 import DataContext from '../context/DataContext';
 import { useContext } from 'react';
 import { CodeBlock, hybrid, monoBlue } from 'react-code-blocks';
+import Section from '../components/Section';
 import Title from '../components/Title';
 
 const  SecComponents = () => {
@@ -50,7 +51,7 @@ const App = () => {
   export default App;`;
 
 	return (
-		<section>
+		<Section>
 			<Title>
         Componentes
       </Title>
@@ -138,7 +139,7 @@ const App = () => {
         theme={darkMode ? hybrid : monoBlue}
         wrapLines
       />
-		</section>
+		</Section>
 	)
 };
 

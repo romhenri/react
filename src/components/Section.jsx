@@ -1,7 +1,19 @@
-const Section = ({children}) => {
+const Section = ({
+  children,
+  className = '',
+  paddingMinimum = false,
+  ...props
+}) => {
   return (
-    <section>
-        {children}
+    <section 
+      className={
+        className + " " +
+        (paddingMinimum ? "min-padding" : "")
+      }
+      {
+        ...props
+      }>
+      {children}
     </section>
   ) 
 }

@@ -13,7 +13,7 @@ const SecLogin = () => {
 	}
 
 	return (
-		<section>
+		<Section>
 			<Title>Entrar</Title>
 			<Flexbox>
 				<Input
@@ -33,13 +33,13 @@ const SecLogin = () => {
 				/>
 			</Flexbox>
 			<ButtonsLine>
-
-				<Button text="Não Tenho Conta" bg="transparent" className="btn-b" onClick={redirect} />
-
+				<Button 
+					text="Não Tenho Conta"
+					onClick={redirect} 
+				/>
 				<Button text="Entrar" onClick={null}/>
-
 			</ButtonsLine>
-		</section>
+		</Section>
 	)
 };
 

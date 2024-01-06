@@ -96,29 +96,6 @@ const  SecCompArch = () => {
       <p>
         Mais sobre Atom Design: <a href="https://bradfrost.com/blog/post/atomic-web-design/">https://bradfrost.com/blog/post/atomic-web-design/</a>
       </p>
-      <hr />
-      <h3>
-        MVC
-      </h3>
-      <p>
-        MVC é um padrão de arquitetura de software que divide a aplicação em três camadas:
-      </p>
-      <ol>
-        <li>
-          Model: Responsável pela manipulação dos dados.
-        </li>
-        <br />
-        <li>
-          View: Responsável pela apresentação dos dados.
-        </li>
-        <br />
-        <li>
-          Controller: Responsável pela lógica de negócio.
-        </li>
-      </ol>
-      <p>
-        No React, o Model e o Controller são representados pelos componentes, enquanto a View é representada pelo JSX.
-      </p>
 		</Section>
 	)
 };

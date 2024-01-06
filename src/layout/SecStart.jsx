@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import DataContext from '../context/DataContext';
+import Section from '../components//Section';
 import Title from '../components/Title';
 import Button from '../components/Button';
 import ButtonsLine from '../components/ButtonsLine';
@@ -19,7 +20,7 @@ const SecStart = () => {
 
 	return (
 		<>
-		<section>
+		<Section>
 			<Title>Sobre esse App</Title>
 			<p>
 				O intuito desta aplicação é aprender, testar e praticar React.js. Aqui você encontra anotações/resumos sobre conceitos dessa biblioteca tão poderosa.
@@ -34,16 +35,21 @@ const SecStart = () => {
 					text={
 						darkMode ? "Modo Claro" : "Modo Escuro"
 					}
-					bg="transparent"
-					className="btn-b"
+					secondary
 					onClick={() => {
 						setDarkMode(!darkMode);
 					}}
 				/>
-				<Button text={active? "Fechar" : "Saber Mais"}
-				onClick={() => {setActive(!active)}}/>
+
+				<Button 
+					text={
+						active? "Fechar" : "Saber Mais"
+					}
+					secondary = {false}
+					onClick={() => {setActive(!active)}}
+				/>
 			</ButtonsLine>
-		</section>
+		</Section>
 		{active && <SecInfo />}
 		</>
 	)

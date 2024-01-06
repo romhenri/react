@@ -1,6 +1,6 @@
 import DataContext from '../context/DataContext';
 import { useContext } from 'react';
-import { CodeBlock, hybrid, monoBlue } from 'react-code-blocks';
+import { CodeBlock, hybrid, monoBlue } from 'react-code-blocks';import Section from '../components/Section';
 import Title from '../components/Title';
 
 const  SecJSX = () => {
@@ -23,7 +23,7 @@ const  SecJSX = () => {
   const code4 = `React.createElement( element, props, children );`;
 
 	return (
-		<section>
+		<Section>
 			<Title>
         O que é JSX? 
       </Title>
@@ -88,7 +88,7 @@ const  SecJSX = () => {
         Como visto no exemplo, a children de um elemento pode ser outro elemento ou um texto.
       </p>
 
-		</section>
+		</Section>
 	)
 };
 

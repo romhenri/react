@@ -1,8 +1,7 @@
 const Input = ({
 	type,
 	label,
-	id,
-	placeholder,
+	id = '',
 	...props
  }) => {
 	return (
@@ -12,7 +11,6 @@ const Input = ({
 				<input
 					id={id}
 					type={type ? type : 'text'}
-					placeholder={placeholder}
 					{...props}
 				/>
 			</label>

@@ -1,3 +1,4 @@
+import Section from '../components/Section';
 import Title from '../components/Title'
 import ButtonsLine from '../components/ButtonsLine'
 import Button from '../components/Button'
@@ -7,7 +8,7 @@ import Footer from '../components/Footer'
 const ErrorPage = () => {
 	return (
 		<main>
-			<section>
+			<Section>
 				<Title>Erro 404!</Title>
 				<p>Esta rota de página não existe ou está escrita incorretamente. Por favor, confira o link acima ou retorne para Home.</p>
 				<ButtonsLine>
@@ -21,7 +22,7 @@ const ErrorPage = () => {
 						<Button text="Retornar para Home" func={'null'} />
 					</Link>
 				</ButtonsLine>
-			</section>
+			</Section>
 			<Footer/>
 		</main>
 	)

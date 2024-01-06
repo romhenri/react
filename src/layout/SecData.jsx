@@ -1,3 +1,4 @@
+import Section from '../components/Section';
 import Title from '../components/Title';
 
 const ana = {
@@ -36,7 +37,7 @@ const luana = {
 const SecData = () => {
 	return (
 		<>
-			<section>
+			<Section>
 				<Title>Status de Clientes</Title>
 				<p>Nome: {ana.cliente}</p>
 				<p>Idade: {ana.idade}</p>
@@ -64,7 +65,7 @@ const SecData = () => {
 						{luana.ativa ? ' Ativa' : ' Inativa'}
 					</span>
 				</p>
-			</section>
+			</Section>
 		</>
 	);
 };
