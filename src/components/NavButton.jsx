@@ -4,7 +4,7 @@ import style from '../css/Header.module.css';
 const NavButton = ({to, text}) => {
   return (
     <NavLink to={to}> 
-      <button className={style.nav_button}>
+      <button className={style.navbutton}>
         {text}
       </button>
     </NavLink>

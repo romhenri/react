@@ -5,10 +5,8 @@
 
   border: 2px solid var(--bg2);
 	border-radius: 15px;
-	padding: 10px;
-  background-color: var(--bg);border: 2px solid var(--bg2);
-	border-radius: 15px;
-	padding: 15px;
+
+	padding: var(--medium);
   background-color: var(--bg);
   display: flex;
   justify-content: space-between;
@@ -52,13 +50,13 @@
   margin-right: 8px;
 }
 
-.nav_button {
+.navbutton {
   background-color: transparent;
   border: 2px solid var(--bgc2);
   border-radius: 5px;
   color: var(--c1);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: var(--md);
   padding: 8px 40px;
   transition: background-color 0.3s ease-out;
 }
@@ -70,7 +68,7 @@
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: var(--xl);
   font-weight: 600;
   color: var(--c1);
   margin: 0;
@@ -85,8 +83,9 @@
 .navlink {
   border: 2px solid var(--bg2);
 	border-radius: 15px;
-	padding: 10px 20px;
+	padding: var(--very-small) var(--big);
   background-color: var(--bg);
+  flex-shrink: 1;
 }
 
 .navlink:hover {
@@ -101,7 +100,7 @@
 
 @media (max-width: 600px) {
   .header {
-    padding: 22px 14px 8px 14px;
+    padding: var(--medium) 14px var(--small) 14px;
     margin: 0px;
     width: 100%;
     box-sizing: border-box;
@@ -111,10 +110,14 @@
   }
   .navbar {
     gap: 5px;
-    margin-top: 10px;
+    margin-top: var(--small);
   }
   .navbar a {
     flex-grow: 1;
+  }
+  .header > a img {
+    margin-left: 5px;
+    scale: .8;
   }
   .navlink{
     width: 100%;

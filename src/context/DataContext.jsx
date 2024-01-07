@@ -25,8 +25,11 @@ export const DataContextProvider = (
     localStorage.setItem('account', JSON.stringify(account));
   }, [account]);
 
-  // if (process.env.NODE_ENV === 'development')
+  if (window.innerWidth < 600) {
+    document.body.classList.add('mobile');
+  }
 
+  // if (process.env.NODE_ENV === 'development')
   const value = useMemo(() => ({
     darkMode, setDarkMode,
     account, setAccount 

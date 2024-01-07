@@ -34,6 +34,16 @@ body {
 	--c2: #2f61e9;
 	--c3: #2f61e91e;
 	--c4: #1d4ac4;
+
+	--sm: .8rem;
+	--md: 1rem;
+	--lg: 1.1rem;
+	--xl: 1.2rem;
+
+	--very-small: 8px;
+	--small: 8px;
+	--medium: 15px;
+	--big: 20px;
 }
 
 body.dark {
@@ -49,6 +59,18 @@ body.dark {
 	--c2: #2f61e9;
 	--c3: #2f61e937;
 	--c4: #7699f8;
+}
+
+body.mobile {
+	--sm: .6rem;
+	--md: .8rem;
+	--lg: 1rem;
+	--xl: 1.2rem;
+
+	--very-small: 5px;
+	--small: 8px;
+	--medium: 10px;
+	--big: 10px;
 }
 
 main {
@@ -124,10 +146,11 @@ main section:last-child {
 h2 {
 	text-align: left;
 	width: 100%;
+	font-size: var(--xl);
 }
 
 h3 {
-	font-size: 1.1rem;
+	font-size: var(--lg);
 }
 
 @media (max-width: 600px) {
@@ -143,7 +166,7 @@ h3 {
 button, 
 .contact-page input[type=submit] {
 	color: #fff;
-	padding: 10px 20px;
+	padding: var(--small) var(--big);
 	border-radius: 5px;
 	border: 2px solid var(--c2);
 	outline: none;
@@ -151,7 +174,7 @@ button,
 	margin-left: 0;
 	cursor: pointer;
 	background-color: var(--c2);
-	font-size: .9rem;
+	font-size: var(--md);
 }
 
 button.btn-a {
@@ -194,6 +217,7 @@ footer a {
 	text-align: center;
 	margin: auto;
 	font-weight: 200;
+	font-size: var(--sm);
 }
 
 footer a:hover {
@@ -211,7 +235,7 @@ label {
 	flex-direction: column;
 	gap: 10px;
 	flex: 1 1 380px;
-	font-size: 0.8rem;
+	font-size: var(--sm);
 }
 
 input {
@@ -221,7 +245,7 @@ input {
 	/* max-width: 380px; */
 	color: var(--c1);
 	background-color: var(--bg3);
-	font-size: 1rem;
+	font-size: var(--md);
 }
 
 textarea {
@@ -229,7 +253,7 @@ textarea {
 	border: 1px solid var(--bg2);
 	color: var(--c1);
 	background-color: var(--bg3);
-	font-size: 1rem;
+	font-size: var(--md);
 	padding: 15px;
 	box-sizing: border-box;
 	resize: vertical;
@@ -264,6 +288,7 @@ section .flexItem {
 }
 
 p, ol, ul  {
+	font-size: var(--md);
 	opacity: 0.8;
 	margin-right: 0px;
 	margin-left: 0px;
@@ -341,6 +366,10 @@ li {
 	border: 3px solid rgba(255, 0, 0, 0.2);
 }
 
+code {
+	font-size: var(--md) !important;
+}
+
 p code, li code {
 	color: var(--c4);
 	background-color: var(--bg4);
@@ -349,7 +378,7 @@ p code, li code {
 }
 
 .error {
-	font-size: 0.8rem;
+	font-size: var(--sm);
 	padding: 5px;
 	background-color: rgba(255, 0, 0, 0.2);
 	border-radius: 3px;
