@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import SecFetch from '../layout/SecFetch';
+import SecFetchProducts from '../layout/SecFetchProducts';
 import SecCounter from '../layout/SecCounter';
 import SecSlide from '../layout/SecSlide';
 import SecAccordion from '../layout/SecAccordion';
@@ -13,6 +14,7 @@ const DemosPage = () => {
 		<main>
 			<Outlet />
 			<SecFetch />
+			<SecFetchProducts />
 			<SecCounter />
 			<SecAccordion />
 			<SecSlide />

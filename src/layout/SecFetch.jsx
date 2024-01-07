@@ -63,7 +63,6 @@ const SecFetch = () => {
 	}
 
 	return (
-		<>
 		<Section>
 			<Title>Fetch Data</Title>
 			<p>
@@ -123,7 +122,6 @@ const SecFetch = () => {
 				/>
 			</ButtonsLine>
 		</Section>
-		</>
 	)
 };
 
