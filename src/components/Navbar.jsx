@@ -1,3 +1,4 @@
+import Section from './Section';
 import NavButton from './NavButton';
 import style from '../css/Header.module.css';
 

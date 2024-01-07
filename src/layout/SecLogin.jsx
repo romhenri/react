@@ -1,3 +1,4 @@
+import Section from '../components/Section';
 import Title from '../components/Title';
 import Flexbox from '../components/Flexbox';
 import Input from '../components/Input';
@@ -36,6 +37,7 @@ const SecLogin = () => {
 				<Button 
 					text="Não Tenho Conta"
 					onClick={redirect} 
+					secondary
 				/>
 				<Button text="Entrar" onClick={null}/>
 			</ButtonsLine>
